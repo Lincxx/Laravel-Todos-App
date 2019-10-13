@@ -15,5 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//load a controller
-Route::get('/about', 'AboutController@index');
+Route::get('todos', 'TodosController@index');
