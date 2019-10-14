@@ -19,12 +19,13 @@ Todo App
                         <li class="list-group-item">
                             {{ $todo->name }}
 
+
+
+
                         @if(!$todo->completed)
-                        <a href="/todos/{{$todo->id}}/complete" class="btn btn-info btn-sm ">Complete todo</a>
+                            <a href="/todos/{{$todo->id}}/complete" class="btn btn-info btn-sm float-right">Complete todo</a>
                         @endif
-
-                        <a href="/todos/{{$todo->id}}" class="btn btn-primary btn-sm float-right">View</a>
-
+                        <a href="/todos/{{$todo->id}}" class="btn btn-primary btn-sm float-right mr-2">View</a>
                         </li>
                     @endforeach
                     </ul>
